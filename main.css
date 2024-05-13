@@ -1,0 +1,47 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 3rem;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  &.grid-2 {
+    grid-template-columns: repeat(3, 100px);
+  }
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .fas {
+    font-size: 4.2rem;
+  }
+}
+.clickable {
+  cursor: pointer;
+}
+.times {
+  color: red;
+}
+.check {
+  color: green;
+}
+.question {
+  color: blue;
+}
