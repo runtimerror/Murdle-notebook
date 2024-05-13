@@ -4,7 +4,8 @@
   "author": "James Dauer <james.dauer@gmail.com> (http://jamesdauer.com)",
   "description": "A simple note taking app for the Murdle series of books. Based heavily on the notebook from Murdle.com",
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "parcel": "^2.12.0"
