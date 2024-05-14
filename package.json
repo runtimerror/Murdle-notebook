@@ -1,6 +1,6 @@
 {
   "name": "murdle-notebook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "James Dauer <james.dauer@gmail.com> (http://jamesdauer.com)",
   "description": "A simple note taking app for the Murdle series of books. Based heavily on the notebook from Murdle.com",
   "scripts": {
