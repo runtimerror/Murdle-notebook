@@ -49,6 +49,10 @@ h1 {
 .form-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
   padding: 10px;
   background-color: #e2e2e2;
   margin-bottom: 30px;
@@ -58,5 +62,8 @@ h1 {
   }
   input {
     margin-bottom: 5px;
+  }
+  .form {
+    margin: 10px 0;
   }
 }
