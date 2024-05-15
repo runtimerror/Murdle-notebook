@@ -1,7 +1,9 @@
-function textReplacer(person) {
+function textReplacer(fieldToSwap) {
   // live replace text as its typed into input fields
-  document.getElementById(`${person}`).addEventListener("input", function (event) {
-    document.getElementById(`${person}-dest`).textContent = event.target.value;
+  document.getElementById(`${fieldToSwap}`).addEventListener("input", function (event) {
+    document.querySelectorAll(`.${fieldToSwap}-dest`).forEach((element) => {
+      element.textContent = event.target.value;
+    });
   });
 }
 
