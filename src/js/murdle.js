@@ -1,3 +1,20 @@
+function textReplacer(person) {
+  // live replace text as its typed into input fields
+  document.getElementById(`${person}`).addEventListener("input", function (event) {
+    document.getElementById(`${person}-dest`).textContent = event.target.value;
+  });
+}
+
+// get all form inputs
+const formInputs = document.querySelectorAll(".form-wrapper > .form");
+
+formInputs.forEach((formInput) => {
+  formInput.querySelectorAll("input").forEach((inputElement) => {
+    const childInputId = inputElement.id;
+    textReplacer(childInputId);
+  });
+});
+
 // get all clickable boxes
 document.querySelectorAll(".clickable").forEach((item) => {
   // for each box, record how many times it has been clicked

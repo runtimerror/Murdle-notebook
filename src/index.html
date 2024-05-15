@@ -10,29 +10,63 @@
   <body>
     <!-- This is our notebook with a grid. The user will click one and it will eithe radd a checkbox or an x to denote known facts based on the clues in the book -->
     <h1>Murdle Notebook Grid</h1>
-    <div class="grid-wrapper">
+    <section class="on-gray">
+      <div class="form-wrapper">
+        <div id="personForm" class="form">
+          <label for="person1">Person 1:</label>
+          <input type="text" id="person1" name="person1" />
+          <br />
+          <label for="person2">Person 2:</label>
+          <input type="text" id="person2" name="person2" />
+          <br />
+          <label for="person3">Person 3:</label>
+          <input type="text" id="person3" name="person3" />
+        </div>
+        <div id="weaponForm" class="form">
+          <label for="weapon1">Weapon 1:</label>
+          <input type="text" id="weapon1" name="weapon1" />
+          <br />
+          <label for="weapon2">Weapon 2:</label>
+          <input type="text" id="weapon2" name="weapon2" />
+          <br />
+          <label for="weapon3">Weapon 3:</label>
+          <input type="text" id="weapon3" name="weapon3" />
+        </div>
+        <div id="locationForm" class="form">
+          <label for="location1">Location 1:</label>
+          <input type="text" id="location1" name="location1" />
+          <br />
+          <label for="location2">Location 2:</label>
+          <input type="text" id="location2" name="location2" />
+          <br />
+          <label for="location3">Location 3:</label>
+          <input type="text" id="location3" name="location3" />
+        </div>
+      </div>
+    </section>
+    <section class="grid-wrapper">
       <div class="grid-container grid-1">
         <div class="grid-item"></div>
-        <div class="grid-item">Person 1</div>
-        <div class="grid-item">Person 2</div>
-        <div class="grid-item">Person 3</div>
-        <div class="grid-item">Item 1</div>
+        <div class="grid-item"><span id="person1-dest">Person 1</span></div>
+        <div class="grid-item"><span id="person2-dest">Person 2</span></div>
+        <div class="grid-item"><span id="person3-dest">Person 3</span></div>
+        <div class="grid-item"><span id="weapon1-dest">Weapon 1</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
-        <div class="grid-item">Item 2</div>
+        <div class="grid-item"><span id="weapon2-dest">Weapon 2</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
-        <div class="grid-item">Item 3</div>
+        <div class="grid-item"><span id="weapon3-dest">Weapon 3</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
       </div>
       <div class="grid-container grid-2">
-        <div class="grid-item">Place 1</div>
-        <div class="grid-item">Place 2</div>
-        <div class="grid-item">Place 3</div>
+        <div class="grid-item"><span id="location1-dest">Location 1</span></div>
+        <div class="grid-item"><span id="location2-dest">Location 2</span></div>
+        <div class="grid-item"><span id="location3-dest">Location 3</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
@@ -57,8 +91,8 @@
         <div class="grid-item clickable"><span>&nbsp;</span></div>
         <div class="grid-item clickable"><span>&nbsp;</span></div>
       </div>
-    </div>
+    </section>
     <!-- Add your JavaScript file here -->
-    <script src="./js/murdle.js"></script>
+    <script type="module" src="./js/murdle.js"></script>
   </body>
 </html>

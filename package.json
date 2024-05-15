@@ -1,10 +1,11 @@
 {
   "name": "murdle-notebook",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "James Dauer <james.dauer@gmail.com> (http://jamesdauer.com)",
   "description": "A simple note taking app for the Murdle series of books. Based heavily on the notebook from Murdle.com",
   "scripts": {
-    "start": "parcel src/index.html",
+    "cleanup": "rmdir /q /s .parcel-cache dist",
+    "start": "npm run cleanup && parcel src/index.html",
     "build": "parcel build src/index.html",
     "preversion": "npm run build",
     "version": "git add -A && git commit -m \"Bump version to $npm_package_version\"",
@@ -13,5 +14,8 @@
   },
   "devDependencies": {
     "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "lottie-web": "^5.12.2"
   }
 }
