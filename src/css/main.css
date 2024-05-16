@@ -1,11 +1,13 @@
 html {
   font-size: 10px;
+  background: url("../img/prism.png") repeat;
 }
 body {
   font-size: 62.5%;
 }
 h1 {
   font-size: 3rem;
+  color: rgb(255, 255, 255);
 }
 .grid-wrapper {
   display: grid;
@@ -54,11 +56,11 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
   padding: 10px;
-  background-color: #e2e2e2;
   margin-bottom: 30px;
   label {
     display: block;
     font-size: 2rem;
+    color: white;
   }
   input {
     margin-bottom: 5px;
